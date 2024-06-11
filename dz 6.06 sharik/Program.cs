@@ -13,12 +13,17 @@ namespace ResumePrinter
         {
             string name = "Юсыпив Александр";
             string title = "Студент-программист";
-            string contactInfo = "Email: yusypiv07@gmail.com\nТелефон: +380 98 059 32 91\nTelegram: https://t.me/trixxxsize";
+            string contactInfo = "Email: yusypiv07@gmail.com\nТелефон: +380 98 059 32 91";
             string summary = "Талантливый студент с сильным интересом к программированию и разработке программного обеспечения";
-            string[] skills = { "C++", "ООП", "UML диаграммы", "Паттерны проектирования", "Python(база)", "Робототехника", "Основы информационных технологий" };
-            string[] education = {
-                "Школа: Усатовский Лицей\nПериод: Сентябрь 2013 - Май 2024\n\nКурсы: Академия ITStep\nПериод: Ноябрь 2022 - Настоящее время",
-            };
+            string skill1 = "C++";
+            string skill2 = "ООП";
+            string skill3 = "UML диаграммы";
+            string skill4 = "Паттерны проектирования";
+            string skill5 = "Python(база)";
+            string skill6 = "Робототехника";
+            string skill7 = "Основы информационных технологий";
+            string education1 = "Школа: Усатовский Лицей\nПериод: Сентябрь 2013 - Май 2024";
+            string education2 = "\nКурсы: Академия ITStep\nПериод: Ноябрь 2022 - Настоящее время";
 
             Console.WriteLine("|---------------------------------------------------|");
             Console.ForegroundColor = ConsoleColor.DarkGray;
@@ -51,19 +56,20 @@ namespace ResumePrinter
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Навыки:");
             Console.ResetColor();
-            foreach (var skill in skills)
-            {
-                Console.WriteLine($"- {skill}");
-            }
+            Console.WriteLine($"- {skill1}");
+            Console.WriteLine($"- {skill2}");
+            Console.WriteLine($"- {skill3}");
+            Console.WriteLine($"- {skill4}");
+            Console.WriteLine($"- {skill5}");
+            Console.WriteLine($"- {skill6}");
+            Console.WriteLine($"- {skill7}");
             Console.WriteLine();
 
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Образование:");
             Console.ResetColor();
-            foreach (var edu in education)
-            {
-                Console.WriteLine(edu);
-            }
+            Console.WriteLine(education1);
+            Console.WriteLine(education2);
         }
     }
 }
